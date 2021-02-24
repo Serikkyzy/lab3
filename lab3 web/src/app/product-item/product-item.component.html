@@ -1,0 +1,19 @@
+<h3>
+	<a [title]="product.name + ' details'" [href]="product.amazonSrc">
+		{{ product.name }}
+	</a>
+</h3>
+
+<img [alt]="product.name" [src]="product.imageSrc">
+
+<p *ngIf="product.rating">
+	Rating: {{ product.rating }}
+</p>
+
+<p *ngIf="product.description">
+	Description: {{ product.description }}
+</p>
+
+<a class="button" [href]="'https://wa.me/77017017010?text=' + product.amazonSrc">
+	Share
+</a>
